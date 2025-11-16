@@ -25,8 +25,8 @@ ChartJS.register(
 ChartJS.defaults.color = "#111";
 ChartJS.defaults.font.size = 12;
 
-const API_BASE = "http://localhost:8000";
-
+// const API_BASE = "http://localhost:8000";
+const API_BASE = "https://dacn-knw4.onrender.com";
 export default function App() {
   // --- States ---
   const [symbol, setSymbol] = useState("VCB");
