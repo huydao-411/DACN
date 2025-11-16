@@ -14,7 +14,7 @@ from finML import FinMLModel
 # Flask app & CORS
 # ==========================
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:5173"])  # FE Vite
+CORS(app)  # FE Vite
 
 # Cache model trong RAM để không train lại mỗi lần
 MODEL_CACHE: dict[tuple[str, int], FinMLModel] = {}
